@@ -263,6 +263,8 @@ StringDictionaryXBW::load(ifstream &in)
 
 	dict->xbw = new XBW(in);
 
+	cout<<"XBW size in bytes: "<<dict->xbw->size()<<endl;
+
 	return dict;
 }
 

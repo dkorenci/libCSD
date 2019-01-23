@@ -431,6 +431,11 @@ main(int argc, char* argv[])
 					dict->save(out);
 			 		out.close();
 					delete dict;
+
+					// re-load dict to print true compressed size
+					ifstream inc((char*)filename.c_str());
+					StringDictionaryXBW::load(inc);
+
 				}
 				else checkFile();
 
