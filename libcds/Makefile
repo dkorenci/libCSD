@@ -1,6 +1,6 @@
 
 #CPPFLAGS=-g3 -Wall -m32 -O0 
-CPPFLAGS=-O9 -Wall -DNDEBUG 
+CPPFLAGS=-O9 -Wall -DNDEBUG -std=c++03
 
 all: clean libcompact
 
